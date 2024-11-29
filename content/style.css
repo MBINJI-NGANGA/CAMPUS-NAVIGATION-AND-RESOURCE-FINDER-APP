@@ -1,0 +1,50 @@
+body{
+    color: #000000;
+    font-family: "poppins", sans-serif;
+}
+.text{
+    color: antiquewhite;
+}
+
+.form-group{
+    font-size: 50px;
+    display: flex;
+    padding-left: 20px;
+}
+.col-xs-4{
+    font-size: 50px;
+    margin: 20px;
+}
+
+.btnbtn bnt-infor btn-lg{
+    font-size: 50px;
+    background-color: #000000;
+}
+.jumbotron{
+    background-color: rgb(156, 156, 156);
+    margin: 0;
+    padding: 10px;
+}
+.jumbotron h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.jumbotron h1,
+.jumbotron p{
+    text-align: center;
+}
+.jumbotron p{
+    font-size: 1.5em;
+}
+#googleMap {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}
+
+#output{
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+}
