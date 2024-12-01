@@ -4,6 +4,7 @@ body{
 }
 .text{
     color: antiquewhite;
+    padding-top: 20px;
 }
 
 .form-group{
@@ -16,10 +17,7 @@ body{
     margin: 20px;
 }
 
-.btnbtn bnt-infor btn-lg{
-    font-size: 50px;
-    background-color: #000000;
-}
+
 .jumbotron{
     background-color: rgb(156, 156, 156);
     margin: 0;
@@ -47,4 +45,21 @@ body{
     text-align: center;
     font-size: 2em;
     margin: 20px auto;
+}
+.bar{
+    
+    padding: 3rem;
+    border-radius: 7px;
+    background-color: #009213;
+    color: white;
+    
+}
+
+.photo{
+    width: 5%;
+    float: left;
+    border-radius: 6px;
+    margin-left: 10px;
+    
+    
 }

@@ -9,7 +9,7 @@ body{
     background:rgba(234, 234, 234, 1);
 }
 .wrapper{
-    width: 370px;
+    width: 390px;
     padding: 2rem 3rem;
     margin: 60px auto;
     background-color: #fff;
@@ -109,4 +109,7 @@ input:focus{
 .recover a{
     text-decoration: none;
     color: #464646;
+}
+.Lo{
+    color: black;
 }
