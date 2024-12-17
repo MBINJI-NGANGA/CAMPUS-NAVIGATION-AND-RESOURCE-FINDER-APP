@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Navigation and Resource Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            width: 100%;
+            height: 70vh; /* Adjusted height to leave space for the description and new div */
+        }
+
+        .bar {
+            padding: 20px;
+            background-color: #0c0227;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bar .photo {
+            width: 50px;
+            height: auto;
+            border-radius: 7px;
+        }
+
+        .bar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .bar .text {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            #map {
+                height: 60vh; /* Adjusted height for tablets */
+            }
+
+            .bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bar .photo {
+                width: 100px;
+            }
+
+            .bar h1 {
+                font-size: 20px;
+            }
+
+            .bar .text {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #map {
+                height: 50vh; /* Adjusted height for mobile devices */
+            }
+
+            .bar .photo {
+                width: 80px;
+            }
+
+            .bar h1 {
+                font-size: 18px;
+            }
+
+            .bar .text {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <img src="school logo.jpeg" class="photo" alt="School Logo">
+        <div>
+            <h1>School Navigator And Resources Finder</h1>
+            <p class="text">This app will help you efficiently locate facilities,
+                navigate the campus and access essential resources like libraries
+                and lecture halls. By offering interactive maps and personalized 
+                features, it enhances convenience and accessibility for students,
+                staff, and visitors.</p>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        // Map initialization
+        var map = L.map('map').setView([-15.37, 28.24], 13);
+        // OSM layer
+        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        });
+        osm.addTo(map);
+        
+    </script>
+</body>
+</html>
+
+
+
